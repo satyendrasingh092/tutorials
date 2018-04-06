@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import {Provider} from 'react-redux'
-import {createStore} from 'redux'
-import App from './src/container/App'
 import {appReducer} from "./src/reducers/rootReducer";
-
-ReactDom.render( <Provider store={createStore(appReducer)}><App/></Provider>,document.getElementById('chatApp'))
+import {createStore} from 'redux'
+import {configureRouteForStore} from './src/configs/routeConfig'
+window.React = React
+let store = createStore(appReducer)
+let routeConfig = configureRouteForStore(store)
+ReactDom.render( routeConfig,document.getElementById('myContainer'))

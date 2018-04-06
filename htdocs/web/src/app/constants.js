@@ -1,0 +1,7 @@
+export const ADD_MESSAGE        = "ADD_MESSAGE"
+export const SET_USER_ID        =  "SET_USER_ID"
+export const ADD_HISTORY        =  "ADD_HISTORY"
+export const REMOVE_USER        =  "REMOVE_USER"
+export const ADD_USER           =  "ADD_USER"
+export const ADD_TYPING_USER    = "ADD_TYPING_USER"
+export const REMOVE_TYPING_USER = "REMOVE_TYPING_USER"
